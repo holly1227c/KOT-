@@ -295,3 +295,18 @@
 </div><div style=display:none;visibility:hidden>
 </div><div style=display:none;visibility:hidden>
 </div><div id=batBeacon113581091748 style=width:0px;height:0px;display:none;visibility:hidden></div>
+<script>
+// 打刻申請ボタン → index.htmlに戻る
+document.querySelectorAll('#button_01').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+});
+// 戻るボタン → index.htmlに戻る
+document.querySelectorAll('#button_03, .htBlock-header_backButton a').forEach(function(btn) {
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'index.html';
+  });
+});
+</script>

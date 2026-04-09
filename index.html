@@ -4574,4 +4574,18 @@
 <link rel=canonical href=https://www.kingoftime.jp/><div style=display:none;visibility:hidden>
 </div><div style=display:none;visibility:hidden>
 </div><div style=display:none;visibility:hidden>
-</div><div id=batBeacon141788627060 style=width:0px;height:0px;display:none;visibility:hidden></div>
+</div><div id=batBeacon141788627060 style=width:0px;height:0px;display:none;visibility:hidden></div><script>
+// 打刻申請・スケジュール申請のselectをクリックで遷移させる
+document.querySelectorAll('.htBlock-selectOther').forEach(function(sel) {
+  sel.addEventListener('change', function() {
+    var val = this.value;
+    if (val === '#button_0590350077313') {
+      window.location.href = '413index.html';
+    } else if (val === '#button_0590350077314') {
+      window.location.href = '414index.html';
+    } else if (val === '#button_0590350077315') {
+      window.location.href = '415index.html';
+    }
+  });
+});
+</script>
